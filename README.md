@@ -1,10 +1,29 @@
-# Single-cv
+# Single-Page CV
 
-A simple, single-page HTML résumé / CV for **Arsema Nekre**, Junior Frontend Developer.
+A single-page HTML résumé / CV for **Arsema Nekre**, Junior Frontend Developer — built as a solution to the [Single-Page CV](https://roadmap.sh/projects/single-page-cv) project on [roadmap.sh](https://roadmap.sh).
 
-## About
+## About the project
 
-This is a lightweight, no-dependency CV built with plain HTML. It's designed to be easy to read, easy to edit, and easy to host anywhere — no build tools, frameworks, or styling required to get started.
+This is a beginner-level project from roadmap.sh's Frontend track. The goal is to lay out a CV — education, skills, and career history — using only semantic HTML, with no styling yet (styling comes in a later project in the series).
+
+## Project requirements
+
+Per the [project brief](https://roadmap.sh/projects/single-page-cv):
+
+| Requirement | Status |
+|---|---|
+| Semantic HTML structure | ⚠️ Partial — uses heading/paragraph tags, but headings are nested inside `<p>` |
+| Single-page layout with education, skills, and career history sections | ✅ Done |
+| SEO meta tags in the `<head>` | ❌ Not yet added |
+| Open Graph (OG) tags for social sharing | ❌ Not yet added |
+| Favicon linked in the `<head>` | ❌ Not yet added |
+
+### Next steps to fully meet the brief
+- Wrap each section (Profile, Skills, Education, Experience, Links) in semantic elements like `<header>`, `<section>`, and `<footer>` instead of plain `<h2>`/`<p>` tags
+- Move the nested `<h2>Lersha</h2>` out of the `<p>` tag — headings can't be children of paragraphs
+- Add a `<meta name="description">` tag describing the page
+- Add Open Graph tags (`og:title`, `og:description`, `og:image`, `og:type`)
+- Add a `<link rel="icon">` favicon
 
 ## Contents
 
@@ -46,17 +65,13 @@ Since it's a static HTML file, you can publish it for free with:
 - **GitHub Pages** — enable Pages in the repo settings (Settings → Pages) pointing to the `CV` branch, then visit `https://wave-eer.github.io/Single-cv/cv.html`
 - **Netlify / Vercel** — drag and drop the file or connect the repo
 
-## Customizing
-
-Open `cv.html` in any text editor and update the content inside the `<body>` tags — name, contact info, skills, education, and experience are all plain text/HTML, so no build step is needed. Consider adding a `<style>` block or linking a CSS file if you'd like custom fonts, colors, or layout.
-
 ## Tech stack
 
-- HTML5 only — no CSS framework, JavaScript, or external dependencies
+- HTML5 only — no CSS framework, JavaScript, or external dependencies (styling is intentionally deferred to a follow-up roadmap.sh project)
 
 ## License
 
-No license has been specified for this repository. Feel free to ask the repository owner if you'd like to reuse or adapt it.
+No license has been specified for this repository.
 
 ## Author
 
