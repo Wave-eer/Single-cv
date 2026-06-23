@@ -8,31 +8,22 @@ This is a beginner-level project from roadmap.sh's Frontend track. The goal is t
 
 ## Project requirements
 
-Per the [project brief](https://roadmap.sh/projects/single-page-cv):
-
 | Requirement | Status |
 |---|---|
-| Semantic HTML structure | ⚠️ Partial — uses heading/paragraph tags, but headings are nested inside `<p>` |
+| Semantic HTML structure | ✅ Done — `<header>`, `<main>`, `<section>`, `<article>`, `<footer>`, `<nav>`, `<address>` |
 | Single-page layout with education, skills, and career history sections | ✅ Done |
-| SEO meta tags in the `<head>` | ❌ Not yet added |
-| Open Graph (OG) tags for social sharing | ❌ Not yet added |
-| Favicon linked in the `<head>` | ❌ Not yet added |
-
-### Next steps to fully meet the brief
-- Wrap each section (Profile, Skills, Education, Experience, Links) in semantic elements like `<header>`, `<section>`, and `<footer>` instead of plain `<h2>`/`<p>` tags
-- Move the nested `<h2>Lersha</h2>` out of the `<p>` tag — headings can't be children of paragraphs
-- Add a `<meta name="description">` tag describing the page
-- Add Open Graph tags (`og:title`, `og:description`, `og:image`, `og:type`)
-- Add a `<link rel="icon">` favicon
+| SEO meta tags in the `<head>` | ✅ Done — `description`, `author`, `keywords` |
+| Open Graph (OG) tags for social sharing | ✅ Done — `og:title`, `og:description`, `og:type`, `og:url`, `og:image`, `og:locale` |
+| Favicon linked in the `<head>` | ✅ Done — inline SVG favicon, no external file needed |
 
 ## Contents
 
 | Section | Details |
 |---|---|
 | Profile | Name, title, address, phone |
-| Skills | HTML, CSS, JavaScript, Figma |
+| Skills | HTML5, CSS3, JavaScript (ES6+), Figma |
 | Education | Adama Science and Technology University — BSc in Computer Science (2018–2022) |
-| Experience | Lersha — Frontend Developer Intern (2 months) |
+| Experience | Lersha — Frontend Developer Intern (June–August 2022) |
 | Links | LinkedIn and GitHub |
 
 ## File structure
@@ -45,6 +36,7 @@ Single-cv/
 ## Usage
 
 ### View it locally
+
 Clone the repo and open the file directly in your browser:
 
 ```bash
@@ -61,7 +53,9 @@ xdg-open cv.html  # Linux
 ```
 
 ### Host it online
+
 Since it's a static HTML file, you can publish it for free with:
+
 - **GitHub Pages** — enable Pages in the repo settings (Settings → Pages) pointing to the `CV` branch, then visit `https://wave-eer.github.io/Single-cv/cv.html`
 - **Netlify / Vercel** — drag and drop the file or connect the repo
 
